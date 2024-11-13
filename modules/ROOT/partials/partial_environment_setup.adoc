@@ -1,35 +1,20 @@
 [id="setup"]
 = Setting up your environment
 
-In order to interact with Starknet and compile Cairo code, you need to install several tools.
-
-The following tools are recommended to begin developing on Starknet:
-
-[cols="1,1,1,1"]
-[%autowidth.stretch]
-|===
-|Tool name | Description | Documentation |Code Repository
-
-|Starkli
-|A command-line interface that allows you to interact with Starknet.
-|https://book.starkli.rs/[book.starkli.rs]
-|https://github.com/xJonathanLEI/starkli[github.com/xJonathanLEI/starkli]
-
-|Scarb
-|A build toolchain and package manager for Cairo and Starknet ecosystems.
-|https://docs.swmansion.com/scarb/[docs.swmansion.com/scarb]
-|https://github.com/software-mansion/scarb[github.com/software-mansion/scarb]
+In order to interact with Starknet and compile Cairo code, you just need a couple tools.
 
 |===
 
 [#installing_starkli]
-== Installing Starkli
+== Starkli
+
+A command-line interface that allows you to interact with Starknet.
 
 The steps for installing Starkli and upgrading Starkli are identical.
 
-.Procedure
+.Installation
 
-. Install Starkliup, the installer for the Starkli environment:
+. First you will need to install Starkliup, the installer for the Starkli environment:
 +
 [source,shell]
 ----
@@ -59,7 +44,7 @@ starkli --version
 Starkli prints the current version.
 
 [#setting_environment_variables_for_starkli]
-== Setting environment variables for Starkli
+=== Setting environment variables for Starkli
 
 For the majority of flags available on Starkli you can set environment variables to make the commands shorter and easier to manage.
 
@@ -80,7 +65,9 @@ export STARKNET_KEYSTORE=~/.starkli-wallets/deployer/keystore.json
 ----
 
 [#installing_scarb]
-== Installing Scarb
+== Scarb
+
+Scarb is build toolchain and package manager for Cairo (the language used by Starknet smart contracts) and the Starknet ecosystem.
 
 Scarb is compatible with macOS, Linux, and Windows operating systems.
 
